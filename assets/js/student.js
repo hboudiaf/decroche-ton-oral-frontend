@@ -1,0 +1,1 @@
+const API_URL = window.DTO_API_URL || "";
