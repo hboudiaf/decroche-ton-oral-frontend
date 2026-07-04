@@ -119,8 +119,8 @@ header{position:sticky;top:0;z-index:100;background:rgba(241,230,210,.92);backdr
 @media(max-width:680px){.nav{gap:12px}.nav-actions .btn-primary{padding:12px 16px;font-size:.86rem}}
 
 /* Icônes tracées à la main */
-.hand-icon{width:40px;height:40px;color:var(--red);margin-bottom:16px}
-.hand-icon svg{width:100%;height:100%}
+.hand-icon{width:46px;height:46px;color:var(--red);margin-bottom:16px;display:inline-block}
+.hand-icon svg{width:100%;height:100%;overflow:visible}
 
 /* Soulignement "au feutre" pour les mots clés */
 .squiggle{position:relative;white-space:nowrap}
@@ -134,6 +134,11 @@ header{position:sticky;top:0;z-index:100;background:rgba(241,230,210,.92);backdr
   line-height:1.15;
   display:inline-block;
 }
+.chrono-caption{display:block;text-align:center;margin-bottom:6px;transform:rotate(-2deg)}
+.chrono-legend{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;max-width:220px;margin-left:auto;margin-right:auto}
+.chrono-legend li{display:flex;align-items:center;gap:10px;font-size:.96rem;color:var(--ink-soft);font-weight:600}
+.chrono-legend strong{color:var(--ink);font-family:Newsreader,serif;font-weight:600;font-size:1.05rem}
+.chrono-dot{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--ink);flex:0 0 13px}
 
 section{padding:88px 0}
 .clean-section{padding:76px 0}
@@ -148,9 +153,8 @@ section{padding:88px 0}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
 @media(max-width:940px){.clean-hero-grid{grid-template-columns:1fr}.hero-copy h1{max-width:none}}
 
-.chrono-wrap{position:relative}
-.chrono-wrap .hand-note{position:absolute;bottom:-14px;right:6%;transform:rotate(-3deg)}
-.chrono-illustration{width:100%;max-width:420px;margin:0 auto;display:block}
+.chrono-wrap{position:relative;text-align:center}
+.chrono-illustration{width:100%;max-width:260px;margin:0 auto;display:block}
 
 /* Cartes façon fiche bristol — coins nets, règlure rouge, légère rotation */
 .clean-card,.simple-card,.criterion,.official-box,.step,.subject-col,.form-box{
