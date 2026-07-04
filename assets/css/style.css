@@ -337,3 +337,48 @@ footer{background:#0b1224;color:#dbe4f0;padding:34px 0}.footer-row{display:flex;
     width: 100%;
   }
 }
+
+
+/* Espace Décroche */
+.espace-decroche-section{
+  background:#fffdf8;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.espace-note{
+  margin:24px auto 0;
+  max-width:860px;
+  padding:18px 22px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#fff;
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  box-shadow:0 12px 34px rgba(20,33,61,.05);
+}
+.espace-note strong{
+  color:var(--navy);
+  white-space:nowrap;
+}
+.espace-note span{
+  color:var(--muted);
+}
+.offer-precision{
+  margin:18px auto 0;
+  max-width:760px;
+  text-align:center;
+  color:rgba(255,255,255,.82);
+  font-size:.95rem;
+}
+.offer-grid-3{
+  grid-template-columns:repeat(3,1fr);
+}
+@media(max-width:900px){
+  .espace-note{
+    flex-direction:column;
+  }
+  .espace-note strong{
+    white-space:normal;
+  }
+}
