@@ -197,3 +197,30 @@ footer{background:#0b1224;color:#dbe4f0;padding:34px 0}.footer-row{display:flex;
 .official-summary { background:#fffdf8; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
 .clean-section { padding:72px 0; }
 @media(max-width:900px){ .clean-section { padding:56px 0; } }
+
+
+/* Listes détaillées des thèmes officiels */
+.subject-list-detailed li{
+  align-items:flex-start;
+  gap:18px;
+}
+.subject-list-detailed li span{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  line-height:1.35;
+}
+.subject-list-detailed li span strong{
+  color:var(--navy);
+  font-weight:800;
+}
+.subject-list-detailed li span em{
+  color:var(--muted);
+  font-style:normal;
+  font-size:.94rem;
+  font-weight:500;
+}
+.shs-question{
+  margin:0 0 14px;
+  color:var(--muted);
+}
