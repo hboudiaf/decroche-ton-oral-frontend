@@ -191,3 +191,9 @@ footer{background:#0b1224;color:#dbe4f0;padding:34px 0}.footer-row{display:flex;
 @media(max-width:900px){
   .clean-hero-grid,.clean-grid.three,.clean-cta-box{grid-template-columns:1fr}
 }
+
+
+/* Compléments officiels Rouen */
+.official-summary { background:#fffdf8; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.clean-section { padding:72px 0; }
+@media(max-width:900px){ .clean-section { padding:56px 0; } }
