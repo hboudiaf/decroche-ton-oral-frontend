@@ -14,3 +14,33 @@
     });
   });
 })();
+
+
+/* Sélecteur de thèmes programme */
+(function(){
+  function applyFilter(container, value){
+    var scope = document;
+    var groups = scope.querySelectorAll('[data-subject-group]');
+    groups.forEach(function(group){
+      var groupValue = group.getAttribute('data-subject-group');
+      var hidden = value !== 'all' && groupValue !== value;
+      group.classList.toggle('is-hidden', hidden);
+    });
+
+    container.querySelectorAll('.subject-filter-btn').forEach(function(btn){
+      var active = btn.getAttribute('data-filter') === value;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  document.addEventListener('click', function(event){
+    var btn = event.target.closest('.subject-filter-btn');
+    if(!btn) return;
+
+    var container = btn.closest('[data-subject-filter]');
+    if(!container) return;
+
+    applyFilter(container, btn.getAttribute('data-filter') || 'all');
+  });
+})();

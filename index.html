@@ -159,9 +159,15 @@
       </p>
     </div>
 
+    <div class="subject-filter" data-subject-filter="programme-index">
+      <button class="subject-filter-btn active" type="button" data-filter="all" aria-pressed="true">Tout</button>
+      <button class="subject-filter-btn" type="button" data-filter="nobel" aria-pressed="false">Prix Nobel / sciences exactes</button>
+      <button class="subject-filter-btn" type="button" data-filter="shs" aria-pressed="false">SHS</button>
+    </div>
+
     <div class="subjects detailed-subjects">
-      <div class="subject-col reveal">
-        <h3>Sciences exactes</h3>
+      <div class="subject-col reveal" data-subject-group="nobel">
+        <h3>Prix Nobel / sciences exactes</h3>
         <ul class="subject-list subject-list-detailed">
 
           <li><b>00</b><span><strong>Alfred Nobel</strong><em>L’homme derrière le prix.</em></span></li>
@@ -181,7 +187,7 @@
         </ul>
       </div>
 
-      <div class="subject-col reveal">
+      <div class="subject-col reveal" data-subject-group="shs">
         <h3>Sciences humaines et sociales</h3>
         <p class="small shs-question">Question centrale : la maladie et le handicap sont-ils des obstacles à la création artistique ?</p>
         <ul class="subject-list subject-list-detailed">

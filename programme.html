@@ -74,6 +74,16 @@
 
 <section class="clean-section" id="programme">
   <div class="wrap">
+    <div class="subject-filter subject-filter-main" data-subject-filter="programme-detail">
+      <button class="subject-filter-btn active" type="button" data-filter="all" aria-pressed="true">Tout</button>
+      <button class="subject-filter-btn" type="button" data-filter="nobel" aria-pressed="false">Prix Nobel / sciences exactes</button>
+      <button class="subject-filter-btn" type="button" data-filter="shs" aria-pressed="false">SHS</button>
+    </div>
+  </div>
+</section>
+
+<section class="clean-section" data-subject-group="nobel">
+  <div class="wrap">
     <div class="section-head center reveal">
       <p class="eyebrow">Sujets sciences exactes</p>
       <h2>Prix Nobel et grandes découvertes.</h2>
@@ -104,7 +114,7 @@
   </div>
 </section>
 
-<section class="clean-section">
+<section class="clean-section" data-subject-group="shs">
   <div class="wrap">
     <div class="section-head center reveal">
       <p class="eyebrow">Sujets SHS</p>
