@@ -163,3 +163,10 @@ footer{background:#0b1224;color:#dbe4f0;padding:34px 0}.footer-row{display:flex;
 @media(max-width:800px){
   .simple-grid{grid-template-columns:1fr}
 }
+
+
+/* Ajustements index ciblé Rouen */
+.simple-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.simple-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 16px 48px rgba(20,33,61,.06)}
+.simple-card p{color:var(--muted)}
+@media(max-width:800px){.simple-grid{grid-template-columns:1fr}}
