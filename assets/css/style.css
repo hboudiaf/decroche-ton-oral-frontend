@@ -156,6 +156,9 @@ section{padding:88px 0}
   letter-spacing:-.02em;
 }
 .hero-statement .lead{font-size:1.2rem;max-width:62ch}
+.facts{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:40px;padding-top:24px;border-top:1.5px dashed var(--rule)}
+.facts span{font-size:.96rem;color:var(--ink-soft);font-weight:600;display:inline-flex;gap:8px;align-items:baseline}
+.facts b{color:var(--red);font-family:Newsreader,serif;font-weight:600;font-size:1.15rem}
 
 /* Cartes façon fiche bristol — coins nets, règlure rouge, légère rotation */
 .clean-card,.simple-card,.criterion,.official-box,.step,.subject-col,.form-box{
