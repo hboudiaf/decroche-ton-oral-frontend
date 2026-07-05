@@ -251,7 +251,8 @@ section{padding:88px 0}
   border:1.5px solid var(--ink);background:var(--card);color:var(--ink);box-shadow:var(--shadow-stamp);
   display:flex;gap:18px;align-items:center;justify-content:space-between;
 }
-.option-box h3{margin:0 0 6px}
+.option-box h3{margin:0 0 6px;color:var(--ink)}
+.offer .option-box h3{color:var(--ink)}
 .option-box p{margin:0;color:var(--ink-soft)}
 @media(max-width:900px){.offer-grid-2{grid-template-columns:1fr}.option-box{flex-direction:column;align-items:flex-start}}
 
