@@ -109,12 +109,7 @@ h1 .hl{color:var(--accent)}
 header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:14px 0}
 .brand{display:inline-flex;align-items:center;gap:12px;flex:0 0 auto}
-.brand-mark{
-  width:42px;height:42px;border-radius:9px;
-  display:inline-flex;align-items:center;justify-content:center;
-  background:var(--bg-dark);color:#fff;
-  font-family:var(--font-display);font-weight:700;font-size:.92rem;letter-spacing:.04em;
-}
+.brand-mark{width:42px;height:44px;display:block;flex:0 0 auto}
 .text-brand strong{display:block;font-family:var(--font-display);font-size:1.14rem;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
 .text-brand small{display:block;color:var(--muted);font-size:.74rem;font-weight:500;margin-top:1px;letter-spacing:.03em}
 .navlinks{display:flex;align-items:center;gap:28px;font-size:.94rem;color:var(--ink-soft);font-weight:500}
@@ -123,7 +118,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdr
 .nav-actions{display:flex;gap:10px;align-items:center}
 .nav-actions .btn{padding:11px 18px;font-size:.9rem}
 .footer-logo{display:inline-flex;align-items:center}
-.footer-text-logo{color:#fff;font-family:var(--font-display);font-weight:700;font-size:1.2rem;letter-spacing:-.01em}
+.footer-logo img{display:block;height:34px;width:auto}
 @media(max-width:950px){.navlinks{display:none}.nav .btn-secondary{display:none}}
 @media(max-width:680px){.nav{gap:12px}.nav-actions .btn-primary{padding:10px 16px;font-size:.88rem}}
 
