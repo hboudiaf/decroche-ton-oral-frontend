@@ -230,6 +230,40 @@ section{padding:88px 0}
 /* Lien webinaire mis en avant dans la nav */
 .navlinks a.nav-webinar{color:var(--accent);font-weight:600}
 
+/* Page ressource SEO — frise calendrier */
+.timeline-list{list-style:none;margin:0;padding:0;display:grid;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg);box-shadow:var(--shadow)}
+.timeline-list li{display:flex;gap:24px;padding:20px 26px;border-top:1px solid var(--line)}
+.timeline-list li:first-child{border-top:0}
+.tl-date{flex:0 0 130px;font-family:var(--font-display);font-weight:700;color:var(--accent);font-size:.98rem}
+.tl-body{color:var(--ink-soft)}
+.tl-body b{color:var(--ink)}
+@media(max-width:640px){.timeline-list li{flex-direction:column;gap:6px}.tl-date{flex:none}}
+
+/* Encadré mise en garde / conseil */
+.callout{
+  margin-top:28px;padding:22px 26px;
+  background:var(--accent-soft);border:1px solid var(--accent);
+  border-left-width:4px;border-radius:var(--radius);color:var(--ink-soft);
+}
+.callout b{color:var(--ink)}
+.callout em{color:var(--accent-dark);font-style:italic}
+
+/* Fiche-sujet */
+.fiche{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow)}
+@media(max-width:640px){.fiche{padding:24px}}
+.fiche h3{color:var(--accent-dark);margin:28px 0 10px;font-size:1.05rem}
+.fiche h3:first-child{margin-top:0}
+.fiche p{color:var(--ink-soft);margin-bottom:0}
+.fiche-plan{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:6px}
+@media(max-width:760px){.fiche-plan{grid-template-columns:1fr}}
+.fiche-plan b{display:block;color:var(--ink);margin-bottom:8px}
+.fiche-plan ul,.fiche-qa{margin:0;padding-left:18px;color:var(--ink-soft)}
+.fiche-plan li{margin-bottom:6px}
+.fiche-qa{margin-top:6px;list-style:none;padding-left:0}
+.fiche-qa li{padding:12px 0;border-top:1px solid var(--line)}
+.fiche-qa li:first-child{border-top:0}
+.fiche-qa b{color:var(--ink);display:block;margin-bottom:3px}
+
 /* Cartes */
 .clean-card,.simple-card,.criterion,.official-box,.step,.subject-col,.form-box{
   background:var(--bg);
