@@ -191,6 +191,45 @@ section{padding:88px 0}
 }
 #qui .stats-note{margin-bottom:0}
 
+/* Section webinaire (réutilise .clean-cta-box) */
+.webinar-date{margin:18px 0 0;color:var(--ink-inverse);font-size:.95rem}
+.webinar-date b{color:#fff}
+.webinar-actions{display:flex;flex-direction:column;gap:12px;min-width:220px}
+.webinar-box .btn-secondary{
+  background:transparent;color:#fff;border:1px solid var(--line-dark);
+}
+.webinar-box .btn-secondary:hover{background:rgba(255,255,255,.08)}
+@media(max-width:900px){.webinar-actions{min-width:0}}
+
+/* Bandeau webinaire dans le hero */
+.hero-webinar-banner{
+  display:inline-flex;align-items:center;gap:12px;
+  margin-bottom:26px;padding:9px 9px 9px 16px;
+  background:var(--accent-soft);border:1px solid var(--accent);
+  border-radius:999px;text-decoration:none;
+  font-size:.92rem;color:var(--accent-dark);font-weight:500;
+  transition:background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.hero-webinar-banner:hover{background:#dce8fb;transform:translateY(-1px);box-shadow:var(--shadow)}
+.hwb-tag{
+  background:var(--accent);color:#fff;font-weight:700;
+  font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;
+  padding:4px 10px;border-radius:999px;white-space:nowrap;
+}
+.hwb-text{color:var(--ink)}
+.hwb-arrow{
+  color:var(--accent);font-weight:700;font-size:1.1rem;
+  transition:transform .2s ease;
+}
+.hero-webinar-banner:hover .hwb-arrow{transform:translateX(3px)}
+@media(max-width:640px){
+  .hero-webinar-banner{flex-wrap:wrap;border-radius:14px;padding:12px 14px}
+  .hwb-text{flex:1 1 100%;order:3}
+}
+
+/* Lien webinaire mis en avant dans la nav */
+.navlinks a.nav-webinar{color:var(--accent);font-weight:600}
+
 /* Cartes */
 .clean-card,.simple-card,.criterion,.official-box,.step,.subject-col,.form-box{
   background:var(--bg);
