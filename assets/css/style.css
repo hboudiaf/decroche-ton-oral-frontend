@@ -173,6 +173,15 @@ section{padding:88px 0}
   .facts span:first-child{border-top:0}
 }
 
+/* Bande de chiffres 2026 (section « Le problème réel ») */
+.facts-stats{margin-top:8px;margin-bottom:0}
+.facts-stats b{color:var(--accent)}
+.stats-note{
+  margin:12px 4px 48px;
+  font-size:.8rem;color:var(--muted);
+}
+@media(max-width:760px){.stats-note{margin-bottom:36px}}
+
 /* Cartes */
 .clean-card,.simple-card,.criterion,.official-box,.step,.subject-col,.form-box{
   background:var(--bg);
