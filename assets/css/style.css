@@ -182,6 +182,15 @@ section{padding:88px 0}
 }
 @media(max-width:760px){.stats-note{margin-bottom:36px}}
 
+/* Section « Qui vous prépare » */
+.teacher-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.teacher-grid{grid-template-columns:1fr}}
+.teacher-label{
+  display:block;color:var(--accent);font-size:.78rem;letter-spacing:.1em;
+  text-transform:uppercase;margin-bottom:10px;font-weight:600;
+}
+#qui .stats-note{margin-bottom:0}
+
 /* Cartes */
 .clean-card,.simple-card,.criterion,.official-box,.step,.subject-col,.form-box{
   background:var(--bg);
