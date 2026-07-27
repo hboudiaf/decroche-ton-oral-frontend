@@ -391,6 +391,7 @@ section{padding:88px 0}
 
 /* Méthode */
 .method{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+#qui{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .criteria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .criterion b{display:block;color:var(--accent);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;font-weight:600}
 .criterion p{margin:0;color:var(--ink-soft)}
